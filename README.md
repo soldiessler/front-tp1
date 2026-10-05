@@ -90,7 +90,7 @@ La página `bitacora.html` registra el proceso del proyecto.
 
 ## Publicación
 
-- URL de Vercel: https://ifts-front-g34-tp1.vercel.app/
+- URL de Vercel: https://front-tp1-tau.vercel.app/
 - Repositorio: https://github.com/soldiessler/front-tp1
 
 ## Uso de IA
