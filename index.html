@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio web grupal para el TP1 de Desarrollo de Sistemas Web - IFTS 29.">
+  <title>G34 — TP1 IFTS 29</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="NODO inicio">G34</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="bitacora.html">Bitácora</a></li>
+        <li><a href="#proyecto">Proyecto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero container" id="inicio">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">IFTS 29 · DESARROLLO FRONT END · 2026</p>
+      <h1>TP Grupal<br><em>Número 1</em></h1>
+      <p class="hero-text">Construimos un sitio web grupal con una portada, perfiles individuales, navegación interna y una bitácora que permite reconocer cómo trabajamos.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#equipo">Nuestro equipo ↓</a>
+        <a class="button button-secondary" href="bitacora.html">Ver bitácora ↗</a>
+      </div>
+    </div>
+    <div class="hero-card reveal" aria-label="Resumen técnico del proyecto">
+      <div class="card-top"><span>Frontend</span><span>01 / 02</span></div>
+      <div class="code-art">
+        <span class="code-muted">const</span> <span class="code-name">tp_01</span> = {<br>
+        <span class="indent">objetivo: <b>"aprender"</b>,</span><br>
+        <span class="indent">diseño: <b>"humano"</b>,</span><br>
+        <span class="indent">tecnologia: <b>"web"</b></span><br>};
+      </div>
+      <div class="card-bottom"><span>HTML</span><span>CSS</span><span>JS</span></div>
+    </div>
+  </section>
+
+  <section class="section container" id="proyecto">
+    <div class="section-heading">
+      <p class="eyebrow">01 — EL PROYECTO</p>
+      <h2>Un sitio web grupal.</h2>
+    </div>
+    <div class="about-grid">
+      <p>Este trabajo práctico reúne una portada grupal, perfiles individuales, navegación interna y una bitácora que permite recorrer y entender el proceso de desarrollo.</p>
+      <p>La propuesta visual toma una dirección editorial y cálida: tipografía grande, tarjetas limpias, color terracota como acento y una interfaz pensada para distintos tamaños de pantalla.</p>
+    </div>
+  </section>
+
+  <section class="section container" id="equipo">
+    <div class="section-heading">
+      <p class="eyebrow">02 — EL EQUIPO</p>
+      <h2>Miembros del Grupo 34.</h2>
+      <p>Cada integrante tiene una pagina propia con información personal, habilidades, gustos e interacción JavaScript.</p>
+    </div>
+
+    <div class="team-grid">
+      <article class="person-card reveal">
+        <div class="avatar-placeholder" aria-hidden="true">LP</div>
+        <div>
+          <p class="card-label">INTEGRANTE G34</p>
+          <h3>Laclau Paula</h3>
+          <p>Buenos Aires, Argentina · x años</p>
+        </div>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <a class="text-link" href="perfil-paula.html">Ver perfil ↗</a>
+      </article>
+
+      <article class="person-card reveal">
+        <div class="avatar-placeholder" aria-hidden="true">WM</div>
+        <div>
+          <p class="card-label">INTEGRANTE G34</p>
+          <h3>Mallqui Valdez Wilmer Ediñho</h3>
+          <p>Buenos Aires, Argentina · 33 años</p>
+        </div>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <a class="text-link" href="perfil-wilmer.html">Ver perfil ↗</a>
+      </article>
+
+      <article class="person-card reveal">
+        <div class="avatar-placeholder" aria-hidden="true">SD</div>
+        <div>
+          <p class="card-label">INTEGRANTE G34</p>
+          <h3>Peralta Diessler Maria Sol</h3>
+          <p>Buenos Aires, Argentina · 31 años</p>
+        </div>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <a class="text-link" href="perfil-sol.html">Ver perfil ↗</a>
+      </article>
+
+        <article class="person-card reveal">
+        <div class="avatar-placeholder" aria-hidden="true">?</div>
+        <div>
+          <p class="card-label">INTEGRANTE G34</p>
+          <h3>Integrante pendiente</h3>
+          <p>Ciudad · edad</p>
+        </div>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <a class="text-link" href="perfil-integrante.html">Ver perfil ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section accent-section">
+    <div class="container split-cta">
+      <div>
+        <p class="eyebrow">03 — EL PROCESO</p>
+        <h2>Registramos todo.</h2>
+      </div>
+      <a class="button button-light" href="bitacora.html">Leer la bitácora →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2026 G34 · TP1 IFTS 29</p>
+    <a href="index.html">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<script src="js/menu.js"></script>
+<script src="js/portada.js"></script>
+</body>
+</html>

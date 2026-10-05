@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitácora — G34</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">G34</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#equipo">Equipo</a></li>
+        <li><a href="bitacora.html" aria-current="page">Bitácora</a></li>
+        <li><a href="index.html#proyecto">Proyecto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-heading container">
+    <p class="eyebrow">PROCESO / BITÁCORA</p>
+    <h1>Cómo llegamos<br><em>hasta acá.</em></h1>
+    <p>Registro de decisiones del desarrollo del TP1.</p>
+  </section>
+
+  <section class="timeline container">
+    <article class="timeline-item">
+      <span class="timeline-number">01</span>
+      <div><p class="eyebrow">INICIO</p><h2>Organización</h2><p>Definimos la estructura del repositorio, las páginas necesarias y una identidad visual común. </p></div>
+    </article>
+    <article class="timeline-item">
+      <span class="timeline-number">02</span>
+      <div><p class="eyebrow">DISEÑO</p><h2>Identidad visual</h2><p>Tomamos como referencia una estética editorial, cálida y experimental: fondo crema, terracota como acento, tipografía grande, tarjetas y espacios amplios.</p></div>
+    </article>
+    <article class="timeline-item">
+      <span class="timeline-number">03</span>
+      <div><p class="eyebrow">DESARROLLO</p><h2>HTML + CSS + JS</h2><p>Construimos primero la estructura semántica y luego aplicamos Grid, Flexbox, media queries y animaciones.</p></div>
+    </article>
+    <article class="timeline-item">
+      <span class="timeline-number">04</span>
+      <div><p class="eyebrow">PRUEBAS</p><h2>Responsive</h2><p>Revisamos el comportamiento en 400 px, 900 px y 1200 px. También comprobamos navegación, formularios, estados de foco y funcionamiento de las interacciones.</p></div>
+    </article>
+    <article class="timeline-item">
+      <span class="timeline-number">05</span>
+      <div><p class="eyebrow">PUBLICACIÓN</p><h2>GitHub + Vercel</h2><p>El repositorio se mantiene público y la versión final se publica mediante Vercel.</p></div>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="index.html">← Inicio</a>
+    <p>© 2026 G34 · Bitácora</p>
+  </div>
+</footer>
+<script src="js/menu.js"></script>
+</body>
+</html>
