@@ -91,6 +91,10 @@ h1 em, h2 em { color: var(--terracotta); font-style: normal; }
 .portrait-placeholder { width: min(100%, 380px); aspect-ratio: 4 / 5; display: grid; place-items: center; background: var(--peach);
   color: var(--terracotta-dark); font: 700 1.3rem var(--font-mono); box-shadow: var(--shadow); transform: rotate(2deg); 
 }
+.portrait-img { width: min(100%, 380px); aspect-ratio: 4 / 5; object-fit: cover; display: block; box-shadow: var(--shadow); 
+  transform: rotate(2deg);
+}
+
 .skills-list { border-top: 1px solid var(--line); }
 .skill-row { display: grid; grid-template-columns: 45px 220px 1fr 50px; gap: 18px; align-items: center; min-height: 78px; 
   border-bottom: 1px solid var(--line); font-size: .9rem; }
