@@ -71,6 +71,7 @@ Se utiliza `IntersectionObserver` para revelar progresivamente las tarjetas cuan
 1. Pestañas dinámicas para películas, discos y sección personal.
 2. Barras de habilidades animadas al entrar en pantalla.
 3. Validación básica del formulario y generación de un enlace `mailto:`.
+4. Recomendación cultural: una interacción que selecciona aleatoriamente una película o un disco perteneciente al perfil visitado.
 
 ### Menú — `js/menu.js`
 
