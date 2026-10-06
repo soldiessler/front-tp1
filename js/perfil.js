@@ -57,3 +57,66 @@ if (form) {
     window.location.href = `mailto:REEMPLAZAR@EMAIL.COM?subject=${subject}&body=${body}`;
   });
 }
+
+
+// Interaccion 4 — Match cultural
+const matchButton = document.querySelector("#matchButton");
+const matchResult = document.querySelector("#matchResult");
+
+if (matchButton && matchResult) {
+  const interestCards = document.querySelectorAll(".interest-grid article");
+
+  const interests = Array.from(interestCards)
+    .map(card => {
+      const title = card.querySelector("h3")?.textContent.trim();
+      const category = card.querySelector("p")?.textContent.trim();
+
+      return { title, category };
+    })
+    .filter(item =>
+      item.title &&
+      item.category &&
+      !item.title.toLowerCase().includes("película") &&
+      !item.title.toLowerCase().includes("disco favorito") &&
+      !item.category.toLowerCase().includes("género") &&
+      !item.category.toLowerCase().includes("album") &&
+      !item.category.toLowerCase().includes("álbum")
+    );
+
+  let lastMatch = null;
+
+  matchButton.addEventListener("click", () => {
+    if (!interests.length) {
+      matchResult.textContent =
+        "Completá los intereses del perfil para descubrir un match.";
+      return;
+    }
+
+    let availableInterests = interests.filter(
+      interest => interest !== lastMatch
+    );
+
+    if (!availableInterests.length) {
+      availableInterests = interests;
+    }
+
+    const randomIndex = Math.floor(
+      Math.random() * availableInterests.length
+    );
+
+    const selected = availableInterests[randomIndex];
+    lastMatch = selected;
+
+    matchResult.innerHTML = `
+      <span class="match-label">TU MATCH</span>
+      <strong>${selected.title}</strong>
+      <span>${selected.category}</span>
+    `;
+
+    matchResult.classList.remove("match-result--visible");
+
+    requestAnimationFrame(() => {
+      matchResult.classList.add("match-result--visible");
+    });
+  });
+}
